@@ -1,0 +1,51 @@
+version: '3'
+
+services:
+
+    apache:
+        build: .
+        image: "net.constructions-incongrues.gong"
+        labels:
+            - "traefik.enable=true"
+            - "traefik.http.routers.php.entrypoints=web"
+            - "traefik.http.routers.php.rule=Host(`net.constructions-incongrues.gong.localhost`)"
+
+    adminer:
+        image: adminer:latest
+        labels:
+            - "traefik.enable=true"
+            - "traefik.http.routers.adminer.entrypoints=web"
+            - "traefik.http.routers.adminer.rule=Host(`adminer.net.constructions-incongrues.gong.localhost`)"
+
+    db:
+        image: mariadb:latest
+        environment:
+            MYSQL_ROOT_PASSWORD: root
+            MYSQL_DATABASE: net.constructions-incongrues.gong
+        volumes:
+            - ./src/bdd.sql:/docker-entrypoint-initdb.d/bdd.sql
+
+    portainer:
+        image: portainer/portainer:1.24.1-alpine
+        labels:
+            - "traefik.enable=true"
+            - "traefik.http.routers.portainer.entrypoints=web"
+            - "traefik.http.routers.portainer.rule=Host(`portainer.net.constructions-incongrues.gong.localhost`)"
+            - "traefik.http.services.portainer.loadbalancer.server.port=9000"
+
+    traefik:
+        command:
+            - "--api.insecure=true"
+            - "--providers.docker=true"
+            - "--providers.docker.exposedbydefault=false"
+            - "--entrypoints.web.address=:80"
+        image: traefik:v2.2.8
+        labels:
+            - "traefik.enable=true"
+            - "traefik.http.routers.traefik.entrypoints=web"
+            - "traefik.http.routers.traefik.rule=Host(`traefik.net.constructions-incongrues.gong.localhost`)"
+            - "traefik.http.services.traefik.loadbalancer.server.port=8080"
+        ports:
+            - "80:80"
+        volumes:
+            - /var/run/docker.sock:/var/run/docker.sock:ro
