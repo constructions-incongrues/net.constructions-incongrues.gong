@@ -1,0 +1,5 @@
+.cicd/compose/base.yml
+.cicd/compose/dev.yml
+services/nginx/src/hostages/*/*
+services/nginx/src/survivors/*/*
+.env

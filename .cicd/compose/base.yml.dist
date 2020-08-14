@@ -1,0 +1,20 @@
+version: '3.3'
+
+services:
+
+    gong:
+        build: ./services/gong
+        volumes:
+            - ./services/nginx/src/hostages:/data/hostages
+            - ./services/nginx/src/survivors:/data/survivors
+
+    nginx:
+        build: ./services/nginx
+        labels:
+            traefik.enable: true
+            traefik.http.routers.${TRAEFIK_PREFIX}-nginx.entrypoints: web
+            traefik.http.routers.${TRAEFIK_PREFIX}-nginx.rule: ${NGINX_TRAEFIK_RULE}
+        volumes:
+            - ./services/nginx/src:/usr/share/nginx/html
+            - ./services/nginx/src/hostages:/usr/share/nginx/html/hostages
+            - ./services/nginx/src/survivors:/usr/share/nginx/html/survivors

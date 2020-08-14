@@ -1,0 +1,15 @@
+#!/bin/sh
+
+# Fail early, be verbose !
+set -ex
+
+# Arguments
+HOSTAGES=${1-/data/hostages}
+SURVIVORS=${2-/data/survivors}
+
+# Téléchargement des morceaux
+for hostages in $(ls ${HOSTAGES}/*); do
+    mkdir -p ${SURVIVORS}/$(basename ${hostages})
+    cd ${SURVIVORS}/$(basename ${hostages})
+    youtube-dl --batch-file="${hostages}"
+done
