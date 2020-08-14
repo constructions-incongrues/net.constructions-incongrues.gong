@@ -11,5 +11,5 @@ SURVIVORS=${2-/data/survivors}
 for hostages in $(ls ${HOSTAGES}/*); do
     mkdir -p ${SURVIVORS}/$(basename ${hostages})
     cd ${SURVIVORS}/$(basename ${hostages})
-    youtube-dl --batch-file="${hostages}"
+    youtube-dl --batch-file="${hostages}" || true
 done
