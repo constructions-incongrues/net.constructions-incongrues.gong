@@ -1,16 +1,18 @@
 # GONG
 
-<https://gong.constructions-incongrues.net>
-
 ## Présentation
 
 **GONG** est l'acronyme de : "**G**ONG : **O**tages **N**umériques **G**estion".
 
-**GONG** est un outil de lutte contre la recrudescence de prises en otages d'entités sonores numériques dans les territoires à risque de l'internet marchand.
+**GONG** est un outil de lutte contre la recrudescence de kidnapping d'entités sonores numériques par les seigneurs de guerre de l'internet marchand : Soundcloud, Mixcloud, Facebook, Youtube, etc.
 
 ## Principales fonctionnalités
 
-- **GONG** permet une extraction simple et un rapatriement sans danger des entités sonores vers un centre d'hébergement ouvert et gratuit
-- Suite à sauvetage, **GONG** met en place une surveillance active du territoire visité : toute nouvelle prise d'otage déclenchera automatiquement une nouvelle procédure de sauvetage
-- Accès complet au entités rapatriées via le site internet [**GONG**](https://gong.constructions-incongrues.net)
-- **GONG** est capable d'intervenir dans plus de 1000 régions à risque : des principaux foyers (soundcloud.com, mixcloud.com, etc) jusqu'au plus reculés des territoires (france2.fr, tumblr.com, etc).
+- **GONG** permet un rapatriement automatique et sans danger des entités sonores vers un centre d'hébergement ouvert et gratuit
+- **GONG** maintient une surveillance active du territoire déjà exploré : toute nouvelle prise d'otage à un emplacement connu déclenchera une nouvelle procédure de sauvetage
+- **GONG** offre un accès complet au entités hébergée via son [site internet](https://gong.constructions-incongrues.net)
+- **GONG** est capable d'intervenir dans plus d'un millier de territoires à risque, des principaux foyers (soundcloud.com, mixcloud.com, etc) jusqu'aux plus reculées des frontières (france2.fr, tumblr.com, etc).
+
+## Libérer des entités sonores à l'aide de GONG
+
+Il suffit pour cela de se rendre à l'adresse suivante : <https://gong.constructions-incongrues.net>
