@@ -11,7 +11,7 @@ services:
     nginx:
         build: ./services/nginx
         labels:
-            traefik.enable: true
+            traefik.enable: "${NGINX_TRAEFIK_ENABLE}"
             traefik.http.routers.${TRAEFIK_PREFIX}-nginx.entrypoints: web
             traefik.http.routers.${TRAEFIK_PREFIX}-nginx.rule: ${NGINX_TRAEFIK_RULE}
         volumes:
