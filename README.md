@@ -6,7 +6,7 @@
 
 **GONG** est accessible à l'adresse suivante : <https://gong.incongru.org>
 
-## Principales fonctionnalités
+## Fonctionnalités
 
 - **GONG** permet un rapatriement automatique et sans danger des entités sonores vers un centre d'hébergement ouvert et gratuit
 - **GONG** maintient une surveillance active du territoire déjà exploré : toute nouvelle prise d'otage à un emplacement connu déclenchera une nouvelle procédure de sauvetage
