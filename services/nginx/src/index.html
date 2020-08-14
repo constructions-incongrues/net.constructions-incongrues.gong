@@ -2,20 +2,23 @@
 
 <head>
     <meta charset="utf8">
-    <title><strong>GONG</strong> : Otages Numériques Gestion</title>
+    <title>GONG : Otages Numériques Gestion</title>
     <link rel="stylesheet" href="https://cdn.rawgit.com/Chalarangelo/mini.css/v3.0.1/dist/mini-default.min.css">
     <style>
-        input, textarea {
-            width: 100%;
-        }
+        input, textarea { width: 100%; }
+        h1 { text-align: center; }
+        input { padding: 0.5rem; font-size: 1rem; }
     </style>
 </head>
 
 <body>
-    <h1>GONG</h1>
+    <h1>
+        <strong>G</strong>ONG : <strong>O</strong>tages <strong>N</strong>umériques <strong>G</strong>estion
+    </h1>
 
-    <p><strong>GONG</strong> est l'acronyme de : "<strong>G</strong>ONG : <strong>O</strong>tages <strong>N</strong>umériques <strong>G</strong>estion".</p>
-    <p><strong>GONG</strong> est un outil de lutte contre la recrudescence des enlèvements d'entités sonores numériques par les seigneurs de guerre de l'internet marchand : Soundcloud, Mixcloud, Facebook, Youtube et leurs fidèles vassaux.</p>
+    <p>
+        <strong>GONG</strong> est un outil de lutte contre la recrudescence des enlèvements d'entités sonores numériques par les seigneurs de guerre de l'internet marchand : Soundcloud, Mixcloud, Facebook, Youtube et leurs fidèles vassaux.
+    </p>
 
     <h2>Fonctionnalités</h2>
     <ul>
@@ -38,10 +41,10 @@
     </p>
     <h3>Programmer une opération de sauvetage</h3>
 
-    <form action="https://github.com/constructions-incongrues/org.incongru.gong/new/master/nginx" method="get" target="_blank">
+    <form action="https://github.com/constructions-incongrues/org.incongru.gong/new/master" method="get" target="_blank">
         <label for="filename">Identifiant de la demande</label><br>
-        <label for="filename"><small>il doit prendre la forme <code>src/hostages/identifiant-de-la-demande</code></small></label><br>
-        <input type="text" placeholder="src/hostages/identifiant-de-la-demande" name="filename" value=""><br>
+        <label for="filename"><small>il doit prendre la forme <code>nginx/src/hostages/identifiant-de-la-demande</code></small></label><br>
+        <input type="text" id="filename" name="filename" onkeydown=""><br>
 
         <label for="value">URLs nécessitant une intervention)</label><br>
         <label for="value"><small>une URL par ligne</small></label><br>
@@ -49,4 +52,6 @@
 
         <input type="submit" value="Liberté, j'écris ton nom">
     </form>
+
+    <script src="main.js"></script>
 </body>
