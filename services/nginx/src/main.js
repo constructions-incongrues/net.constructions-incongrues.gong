@@ -22,4 +22,4 @@ function regexPrefix (regex, prefix) {
 
 // Apply formatter
 const input = document.getElementById('filename');
-addFormatter(input, regexPrefix(/^nginx\/src\/hostages\//, 'nginx/src/hostages/'));
+addFormatter(input, regexPrefix(/^services\/nginx\/src\/hostages\//, 'services\/nginx/src/hostages/'));
