@@ -1,0 +1,41 @@
+version: '3.3'
+
+services:
+
+    nginx:
+        build: ./nginx
+        image: "gong"
+        labels:
+            - "traefik.enable=true"
+            - "traefik.http.routers.nginx.entrypoints=web"
+            - "traefik.http.routers.nginx.rule=Host(`gong.localhost`)"
+        volumes:
+            - ./nginx/src:/usr/share/nginx/html
+            - survivors:/usr/share/nginx/html/survivors
+            - hostages:/usr/share/nginx/html/hostages
+
+    traefik:
+        command:
+            - "--api.insecure=true"
+            - "--providers.docker=true"
+            - "--providers.docker.exposedbydefault=false"
+            - "--entrypoints.web.address=:80"
+        image: traefik:v2.2.8
+        labels:
+            - "traefik.enable=true"
+            - "traefik.http.routers.traefik.entrypoints=web"
+            - "traefik.http.routers.traefik.rule=Host(`traefik.gong.localhost`)"
+            - "traefik.http.services.traefik.loadbalancer.server.port=8080"
+        ports:
+            - "80:80"
+        volumes:
+            - /var/run/docker.sock:/var/run/docker.sock:ro
+
+    downloader:
+        build: ./downloader
+        volumes:
+            - hostages:/data/hostages
+
+volumes:
+    hostages: ~
+    survivors: ~
