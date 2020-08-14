@@ -1,7 +1,5 @@
 # GONG
 
-## Présentation
-
 **GONG** est l'acronyme de : "**G**ONG : **O**tages **N**umériques **G**estion".
 
 **GONG** est un outil de lutte contre la recrudescence de kidnapping d'entités sonores numériques par les seigneurs de guerre de l'internet marchand : Soundcloud, Mixcloud, Facebook, Youtube, etc.
