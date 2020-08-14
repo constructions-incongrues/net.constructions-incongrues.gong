@@ -10,7 +10,7 @@ services:
             - "--entrypoints.web.address=:80"
         image: traefik:v2.2.8
         labels:
-            traefik.enable: true
+            traefik.enable: "${TRAEFIK_TRAEFIK_ENABLE}"
             traefik.http.routers.${TRAEFIK_PREFIX}-traefik.entrypoints: web
             traefik.http.routers.${TRAEFIK_PREFIX}-traefik.rule: ${TRAEFIK_TRAEFIK_RULE}
             traefik.http.services.${TRAEFIK_PREFIX}-traefik.loadbalancer.server.port: 8080
