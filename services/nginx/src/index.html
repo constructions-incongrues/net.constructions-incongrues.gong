@@ -1,57 +1,53 @@
 <!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf8">
+        <title>GONG : Otages Numériques Gestion</title>
+        <link rel="stylesheet" href="https://cdn.rawgit.com/Chalarangelo/mini.css/v3.0.1/dist/mini-default.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Lemonada:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="main.css">
+    </head>
 
-<head>
-    <meta charset="utf8">
-    <title>GONG : Otages Numériques Gestion</title>
-    <link rel="stylesheet" href="https://cdn.rawgit.com/Chalarangelo/mini.css/v3.0.1/dist/mini-default.min.css">
-    <style>
-        input, textarea { width: 100%; }
-        h1 { text-align: center; }
-        input { padding: 0.5rem; font-size: 1rem; }
-    </style>
-</head>
+    <body>
+        <div id="main">
+            <h1>
+                <a class="gong">GONG</a> : Otages Numeriques Gestion
+            </h1>
 
-<body>
-    <h1>
-        <strong>G</strong>ONG : <strong>O</strong>tages <strong>N</strong>umériques <strong>G</strong>estion
-    </h1>
+            <h2>Présentation</h2>
+            <p>
+                <a class="gong">GONG</a> est un outil de lutte contre la recrudescence des enlèvements d'entités culturelles numériques par les seigneurs de guerre de l'internet marchand : Soundcloud, Mixcloud, Facebook, Youtube et leurs fidèles vassaux.
+            </p>
 
-    <p>
-        <strong>GONG</strong> est un outil de lutte contre la recrudescence des enlèvements d'entités sonores numériques par les seigneurs de guerre de l'internet marchand : Soundcloud, Mixcloud, Facebook, Youtube et leurs fidèles vassaux.
-    </p>
+            <h2>Fonctionnalités</h2>
+            <ul>
+                <li><a class="gong">GONG</a> permet un rapatriement automatique et sans danger des entités culturelles vers un centre d'hébergement ouvert et gratuit</li>
+                <li><a class="gong">GONG</a> maintient une surveillance active du territoire déjà exploré : toute nouvelle prise d'otage à un emplacement connu déclenchera une nouvelle procédure de sauvetage</li>
+                <li><a class="gong">GONG</a> offre un accès complet aux entités hébergées via son site internet</li>
+                <li><a class="gong">GONG</a> est capable d'intervenir dans plus d'un millier de territoires à risque, qu'ils soient densément peuplés (soundcloud.com, mixcloud.com, etc) ou pratiquement inhabités (france2.fr, tumblr.com, etc)</li>
+                <li><a class="gong">GONG</a> diffuse le code source des services qui le composent sous la licence libre GNU Affero GPL v3</li>
+            </ul>
 
-    <h2>Fonctionnalités</h2>
-    <ul>
-        <li><strong>GONG</strong> permet un rapatriement automatique et sans danger des entités sonores vers un centre d'hébergement ouvert et gratuit</li>
-        <li><strong>GONG</strong> maintient une surveillance active du territoire déjà exploré : toute nouvelle prise d'otage à un emplacement connu déclenchera une nouvelle procédure de sauvetage</li>
-        <li><strong>GONG</strong> offre un accès complet aux entités hébergées via son site internet</li>
-        <li><strong>GONG</strong> est capable d'intervenir dans plus d'un millier de territoires à risque, qu'ils soient densément peuplés (soundcloud.com, mixcloud.com, etc) ou pratiquement inhabités (france2.fr, tumblr.com, etc)</li>
-        <li><strong>GONG</strong> diffuse le code source des services qui le composent sous la licence libre GNU Affero GPL v3</li>
-    </ul>
+            <h2>Programmmer une opération de sauvetage</h2>
 
-    <h2>Sauvetage</h2>
+            <form action="https://github.com/constructions-incongrues/org.incongru.gong/new/master" method="get" target="_blank">
+                <label for="filename">Nom de la collection</label><br>
+                <input type="text" id="filename" name="filename"><br>
 
-    <h3>Accéder aux entités libérées</h3>
+                <label for="value">URLs nécessitant une intervention</label><br>
+                <label for="value"><small>une URL par ligne</small></label><br>
+                <textarea name="value" rows="5" cols="50"></textarea><br>
 
-    <p>
-        <strong>GONG</strong> n'impose aucune restriction de circulation aux entités libérées.
-    </p>
-    <p>
-        <a href="survivors">Visiter le centre d'hébergement</a>.
-    </p>
-    <h3>Programmer une opération de sauvetage</h3>
+                <input type="submit" value="Liberté, j'écris ton nom">
+            </form>
 
-    <form action="https://github.com/constructions-incongrues/org.incongru.gong/new/master" method="get" target="_blank">
-        <label for="filename">Identifiant de la demande</label><br>
-        <label for="filename"><small>il doit être préfixé par <code>services/nginx/src/hostages/</code></small></label><br>
-        <input type="text" id="filename" name="filename" onkeydown=""><br>
+            <h3>Visites</h3>
+            <p>
+                <a class="gong">GONG</a> n'impose aucune restriction de circulation aux entités libérées : <a href="survivors">Visiter le centre d'hébergement</a>
+            </p>
 
-        <label for="value">URLs nécessitant une intervention)</label><br>
-        <label for="value"><small>une URL par ligne</small></label><br>
-        <textarea name="value" rows="5" cols="50"></textarea><br>
+        </div>
 
-        <input type="submit" value="Liberté, j'écris ton nom">
-    </form>
-
-    <script src="main.js"></script>
-</body>
+        <script src="main.js"></script>
+    </body>
+</html>

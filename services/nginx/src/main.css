@@ -1,0 +1,69 @@
+@font-face {
+    font-family: "Aha Wow";
+    src: url("./fonts/AAhaWow-2O1K8.ttf");
+}
+
+* {
+    font-family: 'Lemonada', cursive;
+    line-height: 2em;
+}
+
+a, ul, li {
+    padding: 0.3em;
+}
+
+h1, a.gong {
+    color: #f9699e;
+    font-family: "Aha Wow";
+}
+
+a.gong:hover {
+    background-color: #f9699e;
+    text-decoration: none;
+    color: #feffcc;
+    background: url(
+        data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAASElEQVQoU2NkIBIwgtT9zJz3n316EpiNjQ8Sg0vCFMAUwzTCDMFQiGwysqtQFOJzLlaF6G5GcSM2SaKtBmkGKQa5mzI3YvMUAGQOIAt3asi/AAAAAElFTkSuQmCC
+    ) repeat;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+form {
+    background-color: #feff65;
+}
+
+body,code {
+    background-color: #feffcc;
+}
+
+body {
+    width: auto;
+    margin-left: 10em;
+    margin-right: 10em;
+}
+
+h1 {
+    text-align: center;
+    font-size: 8em;
+}
+
+h2, h3 {
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+
+input {
+    font-size: 1rem;
+    padding: 0.5rem;
+}
+
+input, textarea {
+    width: 100%;
+}
+
+div#main {
+    margin-bottom: 2em;
+}
